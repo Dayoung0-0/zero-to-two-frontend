@@ -78,6 +78,32 @@ export default function LoginPage() {
           로그인
         </Button>
       </form>
+      <div className="space-y-3">
+        <p className="text-sm font-semibold text-gray-700">소셜 로그인</p>
+        <div className="grid gap-2 md:grid-cols-3">
+          <button
+            type="button"
+            className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium hover:bg-gray-50"
+          >
+            Google로 계속하기
+          </button>
+          <button
+            type="button"
+            className="w-full rounded-md border border-gray-300 bg-yellow-50 px-3 py-2 text-sm font-medium text-yellow-700 hover:bg-yellow-100"
+          >
+            Kakao로 계속하기
+          </button>
+          <button
+            type="button"
+            className="w-full rounded-md border border-gray-300 bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-700 hover:bg-emerald-100"
+          >
+            Naver로 계속하기
+          </button>
+        </div>
+        <p className="text-xs text-gray-500">
+          (데모) 버튼은 UI용으로만 제공되며 실제 소셜 로그인 연동은 포함되어 있지 않습니다.
+        </p>
+      </div>
     </main>
   );
 }
